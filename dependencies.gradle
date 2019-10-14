@@ -39,6 +39,7 @@ ext.libs = [
       framework: "androidx.ui:ui-framework:${versions.androidx.ui}",
       layout: "androidx.ui:ui-layout:${versions.androidx.ui}",
       text: "androidx.ui:ui-text:${versions.androidx.ui}",
+      material: "androidx.ui:ui-material:${versions.androidx.ui}"
     ]
   ]
 ]

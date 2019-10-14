@@ -40,4 +40,5 @@ dependencies {
   implementation libs.androidx.ui.framework
   implementation libs.androidx.ui.layout
   implementation libs.androidx.ui.text
+  implementation libs.androidx.ui.material
 }
