@@ -38,5 +38,6 @@ dependencies {
   kapt libs.androidx.compose.compiler
   implementation libs.androidx.ui.core
   implementation libs.androidx.ui.framework
+  implementation libs.androidx.ui.layout
   implementation libs.androidx.ui.text
 }
