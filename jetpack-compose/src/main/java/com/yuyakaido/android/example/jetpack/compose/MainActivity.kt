@@ -1,8 +1,8 @@
-package com.yuyakaido.android.template
+package com.yuyakaido.android.example.jetpack.compose
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.yuyakaido.android.template.databinding.ActivityMainBinding
+import com.yuyakaido.android.example.jetpack.compose.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
