@@ -1,0 +1,22 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+
+android {
+  compileSdkVersion versions.compilesdk
+  defaultConfig {
+    minSdkVersion versions.minsdk
+    targetSdkVersion versions.targetsdk
+    applicationId "com.yuyakaido.android.example.coroutine"
+    versionCode 1
+    versionName "1.0.0"
+  }
+  dataBinding {
+    enabled = true
+  }
+}
+
+dependencies {
+  // Module
+  implementation project(':core-android')
+}

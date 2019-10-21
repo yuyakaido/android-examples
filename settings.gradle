@@ -1,3 +1,7 @@
-include ':jetpack-compose'
+// Module - Core
 include ':core-android'
 include ':core-java'
+
+// Module - Feature
+include ':jetpack-compose'
+include ':kotlin-coroutine'

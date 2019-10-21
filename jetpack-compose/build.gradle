@@ -28,12 +28,9 @@ dependencies {
   implementation project(':core-android')
 
   // Kotlin
-  implementation libs.kotlin.stdlib
   implementation libs.kotlin.reflect
 
   // AndroidX
-  implementation libs.androidx.appcompat
-  implementation libs.androidx.constraintlayout
   implementation libs.androidx.compose.runtime
   kapt libs.androidx.compose.compiler
   implementation libs.androidx.ui.core

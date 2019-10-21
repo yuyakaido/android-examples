@@ -3,5 +3,9 @@ apply plugin: 'kotlin'
 
 dependencies {
   // Kotlin
-  implementation libs.kotlin.stdlib
+  api libs.kotlin.stdlib
+
+  // Networking
+  api libs.networking.retrofit.core
+  api libs.networking.retrofit.moshi
 }

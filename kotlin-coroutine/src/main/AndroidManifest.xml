@@ -2,7 +2,7 @@
 
 <manifest
   xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.yuyakaido.android.example.jetpack.compose"
+  package="com.yuyakaido.android.example.coroutine"
   >
 
   <application
