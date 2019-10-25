@@ -8,7 +8,10 @@ ext.versions = [
   gradle: '3.5.1',
 
   // Kotlin
-  kotlin: '1.3.50',
+  kotlin: [
+    core: '1.3.50',
+    coroutine: '1.3.2'
+  ],
 
   // Networking
   networking: [
@@ -19,6 +22,8 @@ ext.versions = [
   androidx: [
     appcompat: '1.1.0',
     constraintlayout: '1.1.3',
+    ktx: '1.1.0',
+    lifecycle: '2.2.0-beta01',
     compose: '0.1.0-dev01',
     ui: '0.1.0-dev01'
   ]
@@ -27,10 +32,16 @@ ext.versions = [
 ext.libs = [
   gradle: "com.android.tools.build:gradle:${versions.gradle}",
   kotlin: [
-    stdlib: "org.jetbrains.kotlin:kotlin-stdlib:${versions.kotlin}",
-    reflect: "org.jetbrains.kotlin:kotlin-reflect:${versions.kotlin}",
-    plugin: "org.jetbrains.kotlin:kotlin-gradle-plugin:${versions.kotlin}",
-    allopen: "org.jetbrains.kotlin:kotlin-allopen:${versions.kotlin}"
+    core: [
+      stdlib: "org.jetbrains.kotlin:kotlin-stdlib:${versions.kotlin.core}",
+      reflect: "org.jetbrains.kotlin:kotlin-reflect:${versions.kotlin.core}",
+      plugin: "org.jetbrains.kotlin:kotlin-gradle-plugin:${versions.kotlin.core}",
+      allopen: "org.jetbrains.kotlin:kotlin-allopen:${versions.kotlin.core}"
+    ],
+    coroutine: [
+      core: "org.jetbrains.kotlinx:kotlinx-coroutines-core:${versions.kotlin.coroutine}",
+      android: "org.jetbrains.kotlinx:kotlinx-coroutines-android:${versions.kotlin.coroutine}"
+    ]
   ],
   networking: [
     retrofit: [
@@ -41,6 +52,16 @@ ext.libs = [
   androidx: [
     appcompat: "androidx.appcompat:appcompat:${versions.androidx.appcompat}",
     constraintlayout: "androidx.constraintlayout:constraintlayout:${versions.androidx.constraintlayout}",
+    ktx: [
+      core: "androidx.core:core-ktx:${versions.androidx.ktx}",
+      fragment: "androidx.fragment:fragment-ktx:${versions.androidx.ktx}"
+    ],
+    lifecycle: [
+      runtime: "androidx.lifecycle:lifecycle-runtime-ktx:${versions.androidx.lifecycle}",
+      compiler: "androidx.lifecycle:lifecycle-compiler:${versions.androidx.lifecycle}",
+      viewmodel: "androidx.lifecycle:lifecycle-viewmodel-ktx:${versions.androidx.lifecycle}",
+      livedata: "androidx.lifecycle:lifecycle-livedata-ktx:${versions.androidx.lifecycle}"
+    ],
     compose: [
       runtime: "androidx.compose:compose-runtime:${versions.androidx.compose}",
       compiler: "androidx.compose:compose-compiler:${versions.androidx.compose}"

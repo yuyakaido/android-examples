@@ -28,7 +28,7 @@ dependencies {
   implementation project(':core-android')
 
   // Kotlin
-  implementation libs.kotlin.reflect
+  implementation libs.kotlin.core.reflect
 
   // AndroidX
   implementation libs.androidx.compose.runtime

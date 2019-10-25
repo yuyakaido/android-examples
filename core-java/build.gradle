@@ -3,7 +3,7 @@ apply plugin: 'kotlin'
 
 dependencies {
   // Kotlin
-  api libs.kotlin.stdlib
+  api libs.kotlin.core.stdlib
 
   // Networking
   api libs.networking.retrofit.core

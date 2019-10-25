@@ -19,4 +19,16 @@ android {
 dependencies {
   // Module
   implementation project(':core-android')
+
+  // Kotlin
+  implementation libs.kotlin.coroutine.core
+  implementation libs.kotlin.coroutine.android
+
+  // AndroidX
+  implementation libs.androidx.ktx.core
+  implementation libs.androidx.ktx.fragment
+  implementation libs.androidx.lifecycle.runtime
+  kapt libs.androidx.lifecycle.compiler
+  implementation libs.androidx.lifecycle.viewmodel
+  implementation libs.androidx.lifecycle.livedata
 }
