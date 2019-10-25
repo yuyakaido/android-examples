@@ -9,5 +9,5 @@ interface GitHubService {
   suspend fun search(
     @Query("q") query: String
   ): RepoListResponse
-  
+
 }
